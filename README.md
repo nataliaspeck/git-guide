@@ -30,3 +30,16 @@ In your local machine
 
     git clone git@github.com:nataliaspeck/repository_name.git
    
+## Files lifecycle
+
+ ![enter image description here](https://camo.githubusercontent.com/3a084791b3c5ae27a23ceeb5592d3bf80877cba2/687474703a2f2f6769742d73636d2e636f6d2f666967757265732f3138333333666967303230312d746e2e706e67)
+
+You can write `git status` in your workspace terminal to look your files status. 
+
+When you add files in your local repository, they are initally **untracked** by Git.  In other words, Git dont't recognize this files. 
+
+To change a file status from **modified** to **stage** you can `git add filename` or `git add .` for all your files. 
+
+After a commit, the files are now **unmodified**. When you modify them, they are **modified**.
+
+To commit your changes, you can `git commit -m "Add a commit message here"` and then you can `git push origin(remote name) master(remote branch name)` to send your changes to the repository.
