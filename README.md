@@ -119,3 +119,11 @@ You can use `git stash list` to list all your saved stashes. Git keeps the order
 We use `git stash pop` to apply a stash and delete it from the list. In other hand, we use `git stash apply` to apply a stash but keeping it in the list for previous use.
 
 To clear your stash, use `git stash clear`.
+
+## tags
+
+You can work with tags to divide your updates as releases versions. With `git tag` you can list all configured tags.
+
+To create a tag we use `git tag -a 1.0 -m "Release One"` and then `git push origin master --tags` to send the tag to the remote repo. 
+
+If you want to delete a tag, we can use `git tag -d 1.0` and then `git push origin :1.0` to exclude the remote tag.
