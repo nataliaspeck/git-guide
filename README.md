@@ -57,3 +57,8 @@ To see a 'graph' of the connections between commits, you can `git log --graph`
 Other util commands:
 `git shortlog` or `git shortlog -sn` to see short and direct informations about the commits.
 `git log --decorate` to see extra informations about the commits, like branchs and etc.   
+
+## diff
+
+To see the diff between your changes and the current state of the Git repo, you can `git diff`.
+To see only the name of the changed files, you can `git diff --only-name`
