@@ -107,3 +107,15 @@ rebase add the commits in the finish of the branch,  the order is not keep
 ## .gitignore
 
 The `.gitignore`  file tells git which files (or patterns) it should ignore. You can view an simple example in this repo.
+
+## stash
+
+The `git stash` command takes your uncommitted changes (both staged and unstaged), saves them away for later use, and then reverts them from your working copy.
+
+At this point you're free to make changes, create new commits, switch branches, and perform any other Git operations; then come back and re-apply your stash when you're ready.
+
+You can use `git stash list` to list all your saved stashes. Git keeps the order like an array of stashes (stash{0}, stash{1}...)
+
+We use `git stash pop` to apply a stash and delete it from the list. In other hand, we use `git stash apply` to apply a stash but keeping it in the list for previous use.
+
+To clear your stash, use `git stash clear`.
