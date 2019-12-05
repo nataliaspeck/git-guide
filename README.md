@@ -85,3 +85,22 @@ Important: supposing you want to reset the last commit, you need to put the penu
 To add a remote repo in your Git, you can use `git remote add REMOTE_NAME`
 
 To list your configured remote repos, you can `git remote`
+
+## branch
+
+To create a new branch, we use `git checkout -b BRANCH_NAME`
+
+To list all the branchs, we use `git branch`
+
+To delete a branch, we use `git branch -D BRANCH_NAME`
+
+To change the working branch, we use `git checkout BRANCH_NAME`
+
+Rebasing and merging are both designed to integrate changes from one branch into another branch but in different ways.
+
+ - **Merge** `git merge BRANCH_NAME`
+merge mantains the chronological history of commits, and add a new commit, called merge commit
+
+ - **Rebase** `git rebase BRANCH_NAME`
+rebase add the commits in the finish of the branch,  the order is not keep
+
