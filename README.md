@@ -61,4 +61,20 @@ Other util commands:
 ## diff
 
 To see the diff between your changes and the current state of the Git repo, you can `git diff`.
+
 To see only the name of the changed files, you can `git diff --only-name`
+
+## undo things
+
+To undo all the changes you do (and not commit yet), you can `git checkout .` and to undo the changes in a special file, you can user `git checkout FILENAME`.
+
+To unstaged changes, you can `git reset`, following the same logic of all ( . ) and file (filename) for the extra params.
+
+To reset things you already commited, there are three main options:
+`git reset --soft COMMIT_HASH`: this command return the changes commited to a staged status.
+
+`git reset --mixed COMMIT_HASH`: this command return the changes commited to a modified status.
+
+`git reset --hard COMMIT_HASH`: this command clear all the changes of a commit. 
+
+Important: supposing you want to reset the last commit, you need to put the penultimate commit hash in the reset command.
