@@ -71,6 +71,7 @@ To undo all the changes you do (and not commit yet), you can `git checkout .` an
 To unstaged changes, you can `git reset`, following the same logic of all ( . ) and file (filename) for the extra params.
 
 To reset things you already commited, there are three main options:
+
 `git reset --soft COMMIT_HASH`: this command return the changes commited to a staged status.
 
 `git reset --mixed COMMIT_HASH`: this command return the changes commited to a modified status.
@@ -78,3 +79,9 @@ To reset things you already commited, there are three main options:
 `git reset --hard COMMIT_HASH`: this command clear all the changes of a commit. 
 
 Important: supposing you want to reset the last commit, you need to put the penultimate commit hash in the reset command.
+
+## remote
+
+To add a remote repo in your Git, you can use `git remote add REMOTE_NAME`
+
+To list your configured remote repos, you can `git remote`
