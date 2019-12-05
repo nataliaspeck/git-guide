@@ -127,3 +127,7 @@ You can work with tags to divide your updates as releases versions. With `git ta
 To create a tag we use `git tag -a 1.0 -m "Release One"` and then `git push origin master --tags` to send the tag to the remote repo. 
 
 If you want to delete a tag, we can use `git tag -d 1.0` and then `git push origin :1.0` to exclude the remote tag.
+
+## revert
+
+With `git revert` instead of removing the commit from the project history, it figures out how to invert the changes introduced by the commit and appends a new commit with the resulting inverse content. If you commit adding an 'a' the git revert commits removing this 'a'.
