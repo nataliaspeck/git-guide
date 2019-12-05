@@ -104,3 +104,6 @@ merge mantains the chronological history of commits, and add a new commit, calle
  - **Rebase** `git rebase BRANCH_NAME`
 rebase add the commits in the finish of the branch,  the order is not keep
 
+## .gitignore
+
+The `.gitignore`  file tells git which files (or patterns) it should ignore. You can view an simple example in this repo.
