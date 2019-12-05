@@ -30,9 +30,9 @@ In your local machine
 
     git clone git@github.com:nataliaspeck/repository_name.git
    
-## Files lifecycle
+## files lifecycle
 
- ![enter image description here](https://camo.githubusercontent.com/3a084791b3c5ae27a23ceeb5592d3bf80877cba2/687474703a2f2f6769742d73636d2e636f6d2f666967757265732f3138333333666967303230312d746e2e706e67)
+![enter image description here](https://camo.githubusercontent.com/3a084791b3c5ae27a23ceeb5592d3bf80877cba2/687474703a2f2f6769742d73636d2e636f6d2f666967757265732f3138333333666967303230312d746e2e706e67)
 
 You can write `git status` in your workspace terminal to look your files status. 
 
@@ -43,3 +43,17 @@ To change a file status from **modified** to **stage** you can `git add filename
 After a commit, the files are now **unmodified**. When you modify them, they are **modified**.
 
 To commit your changes, you can `git commit -m "Add a commit message here"` and then you can `git push origin(remote name) master(remote branch name)` to send your changes to the repository.
+
+## logs
+
+To see the history of commits in some branch, you can `git log`. It shows the hash of the commits, the Authors, the Dates and the descriptions.
+
+To see the changes of some special commit, you can `git show HASH_OF_COMMIT`
+
+To see a list of commits by author, you can `git log --author='NAME'`
+
+To see a 'graph' of the connections between commits, you can `git log --graph`
+
+Other util commands:
+`git shortlog` or `git shortlog -sn` to see short and direct informations about the commits.
+`git log --decorate` to see extra informations about the commits, like branchs and etc.   
